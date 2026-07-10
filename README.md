@@ -1,57 +1,43 @@
-# Meu Portfólio de Desenvolvedor Full-Stack
+# Portfolio Rafael Pinheiro
 
-Bem-vindo ao repositório do meu portfólio pessoal. Este projeto foi criado para mostrar minhas habilidades e experiência como desenvolvedor Full-Stack, apresentando os projetos em que trabalhei e as tecnologias que domino.
+Projeto do novo portfolio pessoal do Rafa.
 
-## 🚀 Visão Geral do Projeto
+Este repositorio comeca como uma base de documentacao e planejamento. A implementacao vem depois, quando as decisoes de posicionamento, conteudo, direcao visual e arquitetura estiverem maduras o suficiente para guiar o codigo.
 
-Este site serve como meu cartão de visitas digital. Aqui você encontrará:
+Stack atual da implementacao:
 
-*   Uma introdução sobre mim e minha jornada na tecnologia.
-*   Uma seleção dos meus melhores projetos, com descrições, links e tecnologias utilizadas.
-*   Minhas informações de contato e links para redes profissionais.
+- Next.js App Router
+- React
+- TypeScript
+- TailwindCSS
+- Bun
+- componentes interativos em estilo shadcn
 
-## 🛠️ Stack de Tecnologias
+## Norte do projeto
 
-Este projeto foi construído utilizando tecnologias modernas, escaláveis e eficientes, tanto no front-end quanto no back-end.
+Frase central aprovada:
 
-### **Front-End**
+> Eu uso IA como parte de um processo de engenharia, nao como atalho: transformo contexto em especificacao, especificacao em testes, e testes em software que da para confiar.
 
-*   **[Next.js](https://nextjs.org/)**: Estrutura React para renderização no lado do servidor (SSR) e geração de sites estáticos (SSG).
-*   **[React](https://react.dev/)**: Biblioteca para construir interfaces de usuário.
-*   **[TypeScript](https://www.typescriptlang.org/)**: Superset do JavaScript que adiciona tipagem estática.
-*   **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS utility-first para estilização rápida e responsiva.
+Descricao objetiva:
 
-### **Back-End (Exemplos de tecnologias que posso integrar)**
+> Desenvolvedor full-stack com foco em TypeScript, React, Next.js e Node.js. Crio aplicacoes web combinando produto, arquitetura, testes e IA estruturada com SDD, TDD e context engineering.
 
-*   **[Node.js](https://nodejs.org/)**: Ambiente de execução JavaScript no lado do servidor.
-*   **[Express.js](https://expressjs.com/) / [Fastify](https://www.fastify.io/)**: Frameworks para construção de APIs RESTful.
-*   **Bancos de Dados**: Experiência com bancos de dados SQL (PostgreSQL, MySQL) e NoSQL (MongoDB, Redis).
-*   **Autenticação**: Implementação de sistemas de login com JWT (JSON Web Tokens) e OAuth.
+## Estrutura inicial
 
-## 🏁 Como Executar o Projeto Localmente
+- `docs/decisions.md`: decisoes consolidadas do projeto.
+- `docs/visual-direction.md`: referencias visuais, paleta e direcao do hero.
+- `docs/implementation-guidelines.md`: diretrizes tecnicas de componentizacao e uso de shadcn.
+- `docs/spec-review.md`: revisao de consistencia, decisoes consolidadas e pendencias.
+- `docs/images/`: pasta para imagens de inspiracao adicionadas manualmente.
 
-Siga os passos abaixo para configurar e executar o ambiente de desenvolvimento.
+## Telos
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio
-    ```
+Projeto no Telos/Lola: `#7 - Portfolio Rafael Pinheiro`.
 
-2.  **Instale as dependências:**
-    Este projeto utiliza `pnpm` como gerenciador de pacotes.
-    ```bash
-    pnpm install
-    ```
+Milestones:
 
-3.  **Inicie o servidor de desenvolvimento:**
-    ```bash
-    pnpm dev
-    ```
-
-4.  **Abra no navegador:**
-    Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
-
-## 部署 (Deployment)
-
-O deploy deste projeto é feito automaticamente através da [Vercel](https://vercel.com/), a plataforma de nuvem dos criadores do Next.js, garantindo performance e escalabilidade.
+- `#31` M1 - Pesquisa e posicionamento
+- `#32` M2 - Conteudo e arquitetura
+- `#33` M3 - Direcao visual e UX
+- `#34` M4 - Implementacao e publicacao
