@@ -1,11 +1,16 @@
+import Image from "next/image";
+import heroRafael from "../../public/hero-rafael.png";
+
 export function HeroIllustration() {
   return (
     <div className="hero-portrait" aria-hidden="true">
-      <div className="portrait-hair" />
-      <div className="portrait-face" />
-      <div className="portrait-glasses" />
-      <div className="portrait-neck" />
-      <div className="portrait-body" />
+      <Image
+        alt=""
+        className="hero-portrait-image"
+        priority
+        sizes="(max-width: 920px) 72vw, 36vw"
+        src={heroRafael}
+      />
     </div>
   );
 }

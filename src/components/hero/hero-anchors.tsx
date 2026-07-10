@@ -1,4 +1,8 @@
-const anchors = ["Full-stack", "SDD/TDD", "Context engineering"] as const;
+const anchors = [
+  "Engenharia com IA",
+  "SDD / TDD",
+  "Software confiável",
+] as const;
 
 export function HeroAnchors() {
   return (
