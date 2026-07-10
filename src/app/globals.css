@@ -71,9 +71,7 @@ a {
 }
 
 .hero-section {
-  background:
-    radial-gradient(circle at 22% 18%, rgba(180, 20, 50, 0.26), transparent 30%),
-    linear-gradient(135deg, #730c1e 0%, #5e081a 42%, #480415 72%, #210207 100%);
+  background: #730c1e;
   min-height: 100svh;
   overflow: hidden;
   padding: 26px clamp(18px, 4vw, 44px) 34px;
@@ -105,14 +103,11 @@ a {
 }
 
 .hero-noise {
-  background:
-    radial-gradient(circle at 20% 24%, rgba(255, 255, 255, 0.04), transparent 32%),
-    radial-gradient(circle at 82% 22%, rgba(0, 0, 0, 0.18), transparent 26%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 34%);
   inset: 0;
-  opacity: 0.58;
   pointer-events: none;
   position: absolute;
+  background: none;
+  opacity: 0;
 }
 
 .hero-socials {
@@ -143,22 +138,22 @@ a {
 }
 
 .hero-content {
-  align-items: center;
+  align-items: end;
   display: grid;
   gap: 0;
-  grid-template-columns: minmax(0, 0.98fr) minmax(260px, 0.82fr);
+  grid-template-columns: minmax(0, 0.82fr) minmax(380px, 1.08fr);
   margin: 0 auto;
-  max-width: 1240px;
-  min-height: calc(100svh - 150px);
+  max-width: 1320px;
+  min-height: calc(100svh - 124px);
   position: relative;
   z-index: 1;
 }
 
 .hero-copy {
   align-self: center;
-  max-width: 760px;
+  max-width: 700px;
   padding-left: clamp(58px, 8vw, 122px);
-  padding-right: 16px;
+  padding-right: clamp(12px, 1.4vw, 20px);
 }
 
 .hero-kicker,
@@ -181,6 +176,7 @@ a {
   margin: 0;
   max-width: 760px;
   text-transform: none;
+  word-spacing: 0.08em;
 }
 
 .hero-copy h1 span {
@@ -263,20 +259,23 @@ a {
 .hero-portrait {
   align-self: end;
   display: flex;
+  align-items: flex-end;
   justify-self: end;
-  max-height: 720px;
-  min-height: 520px;
+  max-height: calc(100svh - 96px);
+  min-height: 700px;
   position: relative;
-  width: min(36vw, 450px);
+  width: min(48vw, 700px);
 }
 
 .hero-portrait-image {
+  align-self: flex-end;
   display: block;
   height: auto;
   margin-left: auto;
   max-height: 100%;
   object-fit: contain;
-  object-position: bottom center;
+  object-position: bottom right;
+  transform: translateX(2%);
   user-select: none;
   width: 100%;
 }
