@@ -1,14 +1,16 @@
-import { AboutSection } from "../components/sections/about-section";
-import { CasesSection } from "../components/sections/cases-section";
-import { ContactSection } from "../components/sections/contact-section";
-import { HeroSection } from "../components/sections/hero-section";
-import { ProcessSection } from "../components/sections/process-section";
-import { StackSection } from "../components/sections/stack-section";
+import {
+  AboutSection,
+  CasesSection,
+  ContactSection,
+  Hero,
+  ProcessSection,
+  StackSection,
+} from "../components/sections";
 
 export default function Home() {
   return (
     <main>
-      <HeroSection />
+      <Hero />
       <ProcessSection />
       <CasesSection />
       <StackSection />

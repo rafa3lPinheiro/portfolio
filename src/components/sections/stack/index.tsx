@@ -1,7 +1,7 @@
-import { stackGroups } from "../../content/stack";
-import { SectionShell } from "../layout/section-shell";
-import { PrincipleStrip } from "../stack/principle-strip";
-import { StackGroup } from "../stack/stack-group";
+import { stackGroups } from "../../../content/stack";
+import { SectionShell } from "../../layout/section-shell";
+import { PrincipleStrip } from "./principle-strip";
+import { StackGroup } from "./stack-group";
 
 export function StackSection() {
   return (
@@ -10,9 +10,8 @@ export function StackSection() {
       eyebrow="Stack"
       title="Stack guiada por critério"
       description="Eu gosto de ferramentas que reduzem ambiguidade: tipos fortes, validação clara, testes, boas interfaces e documentação viva."
-      className="stack-section"
     >
-      <div className="stack-grid">
+      <div className="mt-[42px] grid grid-cols-1 gap-[18px] md:grid-cols-2 xl:grid-cols-4">
         {stackGroups.map((group) => (
           <StackGroup key={group.title} title={group.title} items={group.items} />
         ))}

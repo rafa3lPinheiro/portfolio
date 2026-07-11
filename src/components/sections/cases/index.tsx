@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { CaseCard } from "../cases/case-card";
-import { CaseDetailDialog } from "../cases/case-detail-dialog";
-import { CaseDetailDrawer } from "../cases/case-detail-drawer";
-import { SectionShell } from "../layout/section-shell";
-import { cases, type CaseStudy } from "../../content/cases";
-import { useMediaQuery } from "../../hooks/use-media-query";
+import { cases, type CaseStudy } from "../../../content/cases";
+import { useMediaQuery } from "../../../hooks/use-media-query";
+import { SectionShell } from "../../layout/section-shell";
+import { CaseCard } from "./case-card";
+import { CaseDetailDialog } from "./case-detail-dialog";
+import { CaseDetailDrawer } from "./case-detail-drawer";
 
 export function CasesSection() {
   const [selectedCase, setSelectedCase] = useState<CaseStudy | null>(null);
@@ -24,9 +24,8 @@ export function CasesSection() {
       eyebrow="Projetos"
       title="Projetos selecionados"
       description="Alguns exemplos de como eu conecto produto, engenharia e execução para resolver problemas reais."
-      className="cases-section"
     >
-      <div className="cases-grid">
+      <div className="mt-[42px] grid grid-cols-1 gap-[18px] xl:grid-cols-[1.1fr_0.95fr_0.95fr]">
         {cases.map((study) => (
           <CaseCard key={study.id} study={study} onOpen={setSelectedCase} />
         ))}

@@ -1,16 +1,17 @@
+import Link from "next/link";
 import { navigationLinks } from "../../content/navigation";
 
 export function SiteHeader() {
   return (
     <header className="site-header">
-      <a className="brand" href="#hero" aria-label="Ir para o início">
+      <Link className="brand" href="#hero" aria-label="Ir para o início">
         Rafael Pinheiro
-      </a>
+      </Link>
       <nav className="nav-links" aria-label="Navegação principal">
         {navigationLinks.map((link) => (
-          <a key={link.href} href={link.href}>
+          <Link key={link.href} href={link.href}>
             {link.label}
-          </a>
+          </Link>
         ))}
       </nav>
     </header>

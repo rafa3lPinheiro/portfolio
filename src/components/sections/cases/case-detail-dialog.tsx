@@ -1,23 +1,23 @@
-import { type CaseStudy } from "../../content/cases";
-import { Drawer } from "../ui/drawer";
+import { type CaseStudy } from "../../../content/cases";
+import { Dialog } from "../../ui/dialog";
 import { CaseDetailContent } from "./case-detail-content";
 
-type CaseDetailDrawerProps = {
+type CaseDetailDialogProps = {
   study: CaseStudy | null;
   onOpenChange: (open: boolean) => void;
 };
 
-export function CaseDetailDrawer({
+export function CaseDetailDialog({
   study,
   onOpenChange,
-}: CaseDetailDrawerProps) {
+}: CaseDetailDialogProps) {
   return (
-    <Drawer
+    <Dialog
       open={Boolean(study)}
       onOpenChange={onOpenChange}
       title={study?.title ?? "Detalhes do case"}
     >
       {study ? <CaseDetailContent study={study} /> : null}
-    </Drawer>
+    </Dialog>
   );
 }
