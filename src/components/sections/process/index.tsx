@@ -43,7 +43,7 @@ export function ProcessSection() {
         {steps.map((step, index) => (
           <li
             key={step.title}
-            className="border-t border-[var(--line)] px-[10px] pt-4 pb-[18px] transition duration-150 hover:-translate-y-[3px] hover:border-[rgba(200,52,71,0.78)] focus-within:-translate-y-[3px] focus-within:border-[rgba(200,52,71,0.78)] md:min-h-[156px] md:pb-0"
+            className="border-t border-[var(--line)] px-[10px] pt-4 pb-[18px] transition duration-300 hover:-translate-y-[3px] hover:border-[rgba(200,52,71,0.78)] focus-within:-translate-y-[3px] focus-within:border-[rgba(200,52,71,0.78)] md:min-h-[156px] md:pb-0"
           >
             <span className="mb-5 block text-[0.72rem] text-[var(--faint)]">
               {String(index + 1).padStart(2, "0")}

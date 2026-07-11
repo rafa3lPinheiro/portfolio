@@ -1,24 +1,24 @@
 import { cn } from "../../../lib/utils";
 
 const highlights = [
-  "Engenharia com IA",
-  "SDD / TDD",
-  "Software confiável",
+  "+4 anos",
+  "Arquiteto de soluções",
+  "Engenharia de produto",
 ] as const;
 
 export function HeroHighlights() {
   return (
     <div
       aria-label="Destaques do hero"
-      className="relative z-10 mx-auto flex max-w-[1240px] flex-wrap justify-center gap-x-[18px] gap-y-1 px-0 pt-0 md:justify-start md:pl-[clamp(58px,8vw,122px)] md:before:absolute md:before:inset-x-0 md:before:top-[-18px] md:before:h-px md:before:bg-[rgba(255,228,223,0.18)]"
+      className="mt-8 flex w-full items-center justify-between gap-2 text-center md:mx-auto md:max-w-[540px] md:justify-center md:gap-4 lg:mx-0 lg:max-w-[clamp(320px,48vw,720px)] lg:justify-center"
     >
       {highlights.map((highlight, index) => (
         <span
           key={highlight}
           className={cn(
-            "relative p-0 text-center text-[0.95rem] text-[rgba(255,233,228,0.78)] md:pr-[24px]",
+            "relative shrink-0 text-center text-[0.72rem] leading-none text-[rgba(255,233,228,0.76)] md:text-[0.82rem] md:pr-3 lg:pr-4",
             index !== highlights.length - 1 &&
-              "md:pr-[34px] md:after:absolute md:after:right-4 md:after:top-1/2 md:after:h-7 md:after:w-px md:after:-translate-y-[40%] md:after:bg-[rgba(255,228,223,0.2)] md:after:content-['']",
+              "md:pr-6 md:after:absolute md:after:right-3 md:after:top-1/2 md:after:h-4 md:after:w-px md:after:-translate-y-1/2 md:after:bg-[rgba(255,228,223,0.2)] md:after:content-[''] lg:pr-8 lg:after:right-4 lg:after:h-6",
           )}
         >
           {highlight}
