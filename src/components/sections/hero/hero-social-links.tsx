@@ -10,7 +10,7 @@ export function HeroSocialLinks() {
     <>
       <div
         aria-label="Links rápidos"
-        className="absolute top-1/2 left-[clamp(12px,1.8vw,24px)] z-20 hidden -translate-y-1/2 flex-col items-center gap-5 lg:flex"
+        className="absolute top-1/2 left-[clamp(12px,1.8vw,24px)] z-20 hidden -translate-y-1/2 flex-col items-center gap-5 xl:flex"
       >
         <Link
           href={socialLinks.github}
@@ -41,7 +41,7 @@ export function HeroSocialLinks() {
 
       <div
         aria-label="Links rápidos"
-        className="mx-auto mt-5 flex w-full max-w-[220px] items-center justify-center gap-6 lg:hidden"
+        className="mx-auto mt-5 flex w-full max-w-[220px] items-center justify-center gap-6 xl:hidden"
       >
         <Link
           href={socialLinks.github}
