@@ -2,6 +2,11 @@ export type CaseStudy = {
   id: string;
   title: string;
   category: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+  repositoryUrl: string;
   problem: string;
   impact: string;
   impactLabel: string;
@@ -22,6 +27,11 @@ export const cases: CaseStudy[] = [
     id: "endpoint-performance",
     title: "Endpoint crítico otimizado",
     category: "Backend / Performance",
+    image: {
+      src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80",
+      alt: "Dashboard de dados exibido em uma tela",
+    },
+    repositoryUrl: "https://github.com/rafa3lPinheiro",
     problem:
       "Reestruturei um fluxo sob carga para reduzir uma latência crítica em produção.",
     impact: "50s → 4s",
@@ -50,6 +60,11 @@ export const cases: CaseStudy[] = [
     id: "manual-flow",
     title: "Fluxo manual simplificado",
     category: "Produto / Frontend",
+    image: {
+      src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+      alt: "Notebook aberto em um ambiente de trabalho",
+    },
+    repositoryUrl: "https://github.com/rafa3lPinheiro",
     problem:
       "Transformei uma operação repetitiva em um fluxo mais direto e fácil de executar.",
     impact: "5min → 1min",
@@ -78,6 +93,11 @@ export const cases: CaseStudy[] = [
     id: "ai-process",
     title: "Software guiado por contexto",
     category: "IA aplicada / Processo",
+    image: {
+      src: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80",
+      alt: "Representação visual de inteligência artificial",
+    },
+    repositoryUrl: "https://github.com/rafa3lPinheiro",
     problem:
       "Uso IA com specs granulares, critérios de aceite e revisão técnica para acelerar entregas.",
     impact: "SDD + TDD",
