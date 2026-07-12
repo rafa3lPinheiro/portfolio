@@ -3,13 +3,13 @@ export const stackGroups = [
     title: "Frontend",
     items: [
       "React",
+      "React Native",
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "Zustand",
-      "React Hook Form",
-      "Zod",
       "TanStack Query",
+      "Zod",
     ],
   },
   {
@@ -19,6 +19,7 @@ export const stackGroups = [
       "Fastify",
       "NestJS",
       "Prisma",
+      "Drizzle",
       "PostgreSQL",
       "Swagger",
       "Socket.io",
@@ -30,6 +31,7 @@ export const stackGroups = [
       "TDD",
       "Vitest",
       "Jest",
+      "Testing Library",
       "Clean Code",
       "Performance",
       "Acessibilidade",
@@ -40,19 +42,11 @@ export const stackGroups = [
     title: "IA aplicada",
     items: [
       "SDD",
-      "Context engineering",
-      "Specs granulares",
+      "Context Engineering",
+      "RAG",
+      "Agentes de IA",
       "Revisão assistida",
       "Documentação viva",
     ],
   },
-] as const;
-
-export const principles = [
-  "TypeScript forte",
-  "Nomes semânticos",
-  "Sem any desnecessário",
-  "Testes como design",
-  "Performance desde o início",
-  "IA orientada por contexto",
 ] as const;
