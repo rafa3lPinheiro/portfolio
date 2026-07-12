@@ -5,7 +5,7 @@ export function HeroIllustration() {
   return (
     <div
       aria-hidden="true"
-      className="relative mt-auto flex w-full justify-center pt-10 opacity-90 md:pt-12 min-[900px]:pt-6 xl:absolute xl:right-0 xl:bottom-0 xl:left-0 xl:z-10 xl:mx-auto xl:w-full xl:max-w-[1380px] xl:justify-end xl:pt-0 xl:opacity-100"
+      className="pointer-events-none absolute right-[clamp(16px,4vw,44px)] bottom-0 left-[clamp(16px,4vw,44px)] z-10 flex justify-center opacity-90 xl:right-0 xl:left-0 xl:mx-auto xl:w-full xl:max-w-[1380px] xl:justify-end xl:opacity-100"
     >
       <div className="w-full max-w-[340px] origin-bottom md:mx-auto md:max-w-[420px] min-[640px]:max-w-[460px] min-[900px]:max-w-[580px] xl:mr-0 xl:ml-auto xl:w-[min(60vw,980px)] xl:max-w-none xl:self-end">
         <Image
