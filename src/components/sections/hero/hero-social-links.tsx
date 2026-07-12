@@ -12,7 +12,7 @@ type HeroSocialLinksProps = {
 export function HeroSocialLinks({ variant }: HeroSocialLinksProps) {
   const containerClassName =
     variant === "rail"
-      ? "absolute top-1/2 left-[clamp(32px,8vw,128px)] z-30 hidden -translate-y-1/2 flex-col items-center gap-5 xl:flex"
+      ? "absolute top-1/2 left-[clamp(24px,3vw,56px)] z-30 hidden -translate-y-1/2 flex-col items-center gap-5 xl:flex"
       : "mx-auto mt-5 flex w-full max-w-[220px] items-center justify-center gap-6 xl:hidden";
 
   return (
