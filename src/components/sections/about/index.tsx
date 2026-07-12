@@ -18,7 +18,7 @@ export function AboutSection() {
         <span className="text-[0.75rem] font-bold tracking-[0.2em] text-[#f4c6c8] uppercase">
           Sobre
         </span>
-        <h2 className="mt-3 text-[clamp(2.2rem,5vw,4.8rem)] leading-[1.05] font-bold text-[var(--text)]">
+        <h2 className="mt-3 text-5xl leading-[1.05] font-bold text-[var(--text)]">
           Sobre mim
         </h2>
         <p className="mt-[18px] text-base leading-[1.8] text-[var(--muted)]">
