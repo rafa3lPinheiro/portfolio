@@ -10,7 +10,7 @@ export function HeroHighlights() {
   return (
     <div
       aria-label="Destaques do hero"
-      className="mt-12 flex w-full items-center justify-between gap-2 text-center md:mx-auto md:mt-10 md:max-w-[620px] md:justify-center md:gap-4 min-[900px]:mt-7 min-[900px]:max-w-[760px] xl:mx-0 xl:mt-8 xl:max-w-[clamp(320px,48vw,720px)] xl:justify-center"
+      className="mt-4 flex w-full items-center justify-between gap-2 text-center md:mx-auto md:mt-10 md:max-w-[620px] md:justify-center md:gap-4 min-[900px]:mt-7 min-[900px]:max-w-[760px] xl:mx-0 xl:mt-8 xl:max-w-[clamp(320px,48vw,720px)] xl:justify-center"
     >
       {highlights.map((highlight, index) => (
         <span
