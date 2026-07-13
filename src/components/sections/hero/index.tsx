@@ -12,7 +12,7 @@ export function Hero() {
       <HeroNavbar />
       <HeroSocialLinks variant="rail" />
 
-      <div className="relative z-20 mx-auto flex h-[calc(100svh-96px)] max-w-[1380px] flex-col items-center pt-8 pb-0 md:h-[calc(100svh-104px)] md:pt-10 min-[900px]:justify-start min-[900px]:pt-10 xl:h-[calc(100svh-112px)] xl:flex-row xl:items-center xl:justify-start xl:pt-[clamp(48px,7vw,104px)] xl:pb-[clamp(24px,4vw,40px)]">
+      <div className="relative z-20 mx-auto flex h-[calc(100svh-96px)] max-w-[1380px] flex-col items-center pt-0 pb-0 md:h-[calc(100svh-104px)] md:pt-10 min-[900px]:justify-start min-[900px]:pt-10 xl:h-[calc(100svh-112px)] xl:flex-row xl:items-center xl:justify-start xl:pt-[clamp(48px,7vw,104px)] xl:pb-[clamp(24px,4vw,40px)]">
         <div className="relative z-20 max-w-[clamp(320px,88vw,700px)] px-0 text-center md:mx-auto md:max-w-[620px] min-[900px]:max-w-[760px] xl:mx-0 xl:max-w-[720px] xl:pl-[clamp(40px,4vw,72px)] xl:pr-4 xl:text-left">
           <h1 className="m-0 flex max-w-[clamp(320px,86vw,760px)] flex-col text-[clamp(4rem,13vw,8.9rem)] leading-[0.78] font-black tracking-[0] text-center [word-spacing:0.08em] md:max-w-[620px] md:text-[clamp(4.6rem,12vw,6.4rem)] min-[900px]:max-w-[760px] min-[900px]:text-[clamp(5.4rem,10vw,7.4rem)] xl:max-w-[820px] xl:text-left xl:text-[clamp(5.6rem,8.8vw,9.4rem)]">
             <span className="mb-1 block text-[#fff3ef] md:mb-3">Rafael</span>
