@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { Download } from "lucide-react";
+import heroRafael from "../../../public/hero-rafael.png";
 import { ButtonLink } from "../../ui/button";
 
 export function AboutSection() {
@@ -8,13 +10,19 @@ export function AboutSection() {
       className="mx-auto grid max-w-[1120px] grid-cols-1 items-center gap-14 px-[clamp(18px,4vw,40px)] py-[72px] md:grid-cols-[0.78fr_1fr] md:py-[104px]"
     >
       <div
-        className="relative flex aspect-[0.82] w-full max-w-[420px] items-center justify-center overflow-hidden rounded-[16px] border border-[var(--line)] bg-[linear-gradient(145deg,rgba(72,4,21,0.5),rgba(20,15,23,0.85)),var(--surface-2)] text-[var(--faint)]"
+        className="order-2 relative mx-auto flex aspect-[0.82] w-full max-w-[420px] items-end justify-center overflow-hidden rounded-[16px] border border-[var(--line)] bg-[linear-gradient(145deg,rgba(72,4,21,0.5),rgba(20,15,23,0.85)),var(--surface-2)] md:order-1"
         aria-label="Foto de Rafael Pinheiro"
       >
-        <span className="text-[0.78rem] tracking-[0.2em] uppercase">Foto</span>
-        <span className="absolute bottom-[12%] left-[18%] h-[2px] w-[64%] bg-[rgba(200,52,71,0.58)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(200,52,71,0.2),transparent_52%)]" />
+        <Image
+          src={heroRafael}
+          alt="Ilustração de Rafael Pinheiro"
+          className="relative z-10 h-full w-full object-cover object-center"
+          sizes="(max-width: 767px) 80vw, 420px"
+        />
+        <span className="absolute right-5 bottom-5 z-20 h-px w-20 bg-[rgba(255,237,230,0.28)]" />
       </div>
-      <div>
+      <div className="order-1 md:order-2">
         <span className="text-[0.75rem] font-bold tracking-[0.2em] text-[#f4c6c8] uppercase">
           Sobre
         </span>
@@ -22,14 +30,20 @@ export function AboutSection() {
           Sobre mim
         </h2>
         <p className="mt-[18px] text-base leading-[1.8] text-[var(--muted)]">
-          Sou Rafael Pinheiro, desenvolvedor full-stack em Brasília. Programo
-          desde 2021 e trabalho criando aplicações web de ponta a ponta, do
-          entendimento do problema a interfaces, APIs, dados, testes e evolução.
+          Sou Rafael Pinheiro, desenvolvedor full stack em Brasília.
         </p>
         <p className="mt-[18px] text-base leading-[1.8] text-[var(--muted)]">
-          Na prática, gosto de aproximar produto e engenharia: transformar
-          contexto em especificação, decisão técnica em implementação e validação
-          em aprendizado para a próxima iteração.
+          Programo desde 2021 e gosto de transformar ideias em software com
+          clareza, organização e visão de produto.
+        </p>
+        <p className="mt-[18px] text-base leading-[1.8] text-[var(--muted)]">
+          Trabalho de forma colaborativa, buscando simplificar problemas,
+          alinhar contexto e tomar decisões que façam sentido para o projeto
+          como um todo.
+        </p>
+        <p className="mt-[18px] text-base leading-[1.8] text-[var(--muted)]">
+          Mais do que implementar, valorizo comunicação clara, cuidado com o
+          processo e responsabilidade com o resultado entregue.
         </p>
         <div className="my-6 flex flex-wrap gap-x-[18px] gap-y-3">
           <span className="text-[0.88rem] text-[var(--muted)]">
