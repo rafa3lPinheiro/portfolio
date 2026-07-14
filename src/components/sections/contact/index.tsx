@@ -13,19 +13,18 @@ export function ContactSection() {
         Contato
       </span>
       <h2 className="mt-3 text-5xl leading-[1.05] font-bold text-[var(--text)]">
-        Vamos conversar?
+        Vamos conversar
       </h2>
       <p className="mx-auto mt-[18px] max-w-[620px] text-base leading-[1.8] text-[var(--muted)]">
-        Gosto de trabalhar em produtos onde contexto, engenharia e execução
-        precisam andar juntos. Se isso parece com o que você quer construir, me
-        chama.
+        Se a forma como eu penso, construo e resolvo problemas faz sentido para
+        o que você procura, vamos falar sobre o seu projeto.
       </p>
       <div className="mt-[30px] flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-        <ButtonLink href={`mailto:${socialLinks.email}`}>
+        <ButtonLink
+          href={`mailto:${socialLinks.email}`}
+          className="min-w-[220px] px-7"
+        >
           Entrar em contato <Mail size={18} />
-        </ButtonLink>
-        <ButtonLink href="#" variant="secondary" aria-disabled="true">
-          Ver currículo
         </ButtonLink>
       </div>
       <div className="mt-[26px] flex flex-wrap items-center justify-center gap-5">
