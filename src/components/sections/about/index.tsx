@@ -23,10 +23,7 @@ export function AboutSection() {
         <span className="absolute right-5 bottom-5 z-20 h-px w-20 bg-[rgba(255,237,230,0.28)]" />
       </div>
       <div className="order-1 md:order-2">
-        <span className="text-[0.75rem] font-bold tracking-[0.2em] text-[#f4c6c8] uppercase">
-          Sobre
-        </span>
-        <h2 className="mt-3 text-5xl leading-[1.05] font-bold text-[var(--text)]">
+        <h2 className="text-5xl leading-[1.05] font-bold text-[var(--text)]">
           Sobre mim
         </h2>
         <p className="mt-[18px] text-base leading-[1.8] text-[var(--muted)]">
