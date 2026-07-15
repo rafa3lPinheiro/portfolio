@@ -2,9 +2,15 @@
 
 ## Objetivo
 
-Apresentar Rafa de forma humana, direta e confiavel, conectando trajetoria, formacao e modo de pensar software.
+Apresentar Rafa de forma humana, madura e profissional, sem transformar a secao em mini curriculo.
 
-A secao deve complementar os cases e a stack sem repetir o curriculo inteiro.
+A funcao da secao e responder rapidamente:
+
+- quem e Rafa;
+- como ele trabalha;
+- o que ele valoriza ao construir software.
+
+Ela deve complementar Hero, Processo, Cases e Stack, trazendo contexto humano e estilo de trabalho, sem repetir a pagina inteira.
 
 ## Escopo
 
@@ -12,9 +18,9 @@ Esta spec cobre apenas a secao Sobre da Home.
 
 Inclui:
 
-- mensagem central;
-- conteudo biografico curto;
-- pontos de confianca;
+- narrativa da secao;
+- padrao de copy;
+- conteudo base;
 - direcao visual;
 - comportamento responsivo;
 - criterios de aceite.
@@ -22,140 +28,158 @@ Inclui:
 ## Fora de Escopo
 
 - Reproduzir curriculo completo.
-- Listar todas as experiencias em linha do tempo extensa.
-- Entrar em detalhes internos da nimbuslab.
-- Falar de vida pessoal alem do necessario para criar contexto.
+- Fazer linha do tempo de experiencias.
+- Listar todas as tecnologias novamente.
+- Repetir a tese do Hero com outras palavras.
 - Criar pagina separada de Sobre.
+
+## Padrao de Conteudo
+
+Com base em referencias recorrentes de portfolios profissionais, o About deve seguir este formato:
+
+1. Identidade curta
+2. Area de atuacao
+3. Forma de trabalhar
+4. Valor humano/profissional
+5. CTA opcional para curriculo
+
+O texto deve ser curto, direto e legivel em poucos segundos.
+
+Nao deve parecer:
+
+- resumo de LinkedIn;
+- carta de apresentacao;
+- lista de adjetivos;
+- autobiografia.
 
 ## Mensagem Central
 
 ```txt
-Sou um desenvolvedor full-stack que gosta de entender o problema antes de construir a solucao.
+Sou um desenvolvedor full stack que gosta de transformar ideias em software com clareza, organizacao e visao de produto.
 ```
 
-Versao mais autoral:
+Complemento conceitual:
 
 ```txt
-Gosto de software que nasce de contexto bem entendido, decisao tecnica clara e cuidado na execucao.
+Mais do que implementar, valorizo comunicacao clara, cuidado com o processo e responsabilidade com o resultado entregue.
 ```
 
 ## Conteudo Base
 
-Pontos que devem aparecer:
+Pontos que devem aparecer com naturalidade:
 
-- Rafael Pinheiro.
-- Desenvolvedor full-stack.
-- Atua com desenvolvimento de software ponta a ponta.
-- Programa desde 2021.
-- Estudante de Engenharia Mecatronica na UnB.
-- Interesse por produto, arquitetura, qualidade, TDD e uso estruturado de IA.
+- Rafael Pinheiro
+- desenvolvedor full stack
+- Brasilia
+- programa desde 2021
+- estudante de Engenharia Mecatronica na UnB
+- conecta produto, engenharia e execucao
+- trabalha de forma colaborativa
+- valoriza clareza, organizacao e responsabilidade
 
-## Copy Inicial
+## Copy Recomendada
 
-Versao sugerida:
+Versao base:
 
 ```txt
-Sou Rafael Pinheiro, desenvolvedor full-stack em Brasilia. Programo desde 2021 e trabalho criando aplicacoes web de ponta a ponta, do entendimento do problema a interfaces, APIs, dados, testes e evolucao.
+Sou Rafael Pinheiro, desenvolvedor full stack em Brasilia.
 
-Na pratica, gosto de aproximar produto e engenharia: transformar contexto em especificacao, decisao tecnica em implementacao e validacao em aprendizado para a proxima iteracao.
+Programo desde 2021 e gosto de transformar ideias em software com clareza, organizacao e visao de produto.
+
+Trabalho de forma colaborativa, buscando simplificar problemas, alinhar contexto e tomar decisoes que facam sentido para o projeto como um todo.
+
+Mais do que implementar, valorizo comunicacao clara, cuidado com o processo e responsabilidade com o resultado entregue.
 ```
 
 Versao curta:
 
 ```txt
-Desenvolvedor full-stack em Brasilia, estudante de Engenharia Mecatronica na UnB e builder de produtos web com TypeScript, React, Node.js e IA estruturada.
+Desenvolvedor full stack em Brasilia, programando desde 2021 e construindo software com clareza, colaboracao e visao de produto.
 ```
 
-## Pontos de Confianca
+## Principios de Copy
 
-Podem aparecer como lista curta, badges ou pequenas metricas:
+- Priorizar como Rafa pensa e trabalha, nao apenas o que estudou.
+- Mostrar soft skills de forma implicita, pelo comportamento descrito.
+- Evitar termos vazios como proativo, resiliente, dinamico e apaixonado.
+- Evitar excesso de buzzwords.
+- Manter tom confiante, mas nao inflado.
+- So mencionar formacao e contexto academico se isso somar confianca sem roubar foco.
 
-- Programando desde 2021.
-- Engenharia Mecatronica na UnB.
-- Full-stack: frontend, backend, dados e testes.
-- Foco em clareza, performance e manutencao.
-- IA usada com contexto, specs e validacao.
+## Sinais de Confianca
+
+Podem aparecer como pequenos highlights ou texto de apoio:
+
+- Programando desde 2021
+- Engenharia Mecatronica na UnB
+- Full stack
+
+Esses pontos devem apoiar a narrativa principal, nao competir com ela.
 
 ## Direcao Visual
 
-A secao deve seguir `docs/images/site-inspiration.jpg`.
+A secao deve manter o visual dark premium ja definido no projeto.
 
 Direcao:
 
-- dark premium;
-- bloco de texto elegante;
-- foto do Rafa ao lado do texto;
-- cards discretos para pontos de confianca;
-- acentos bordo com parcimonia;
+- foto do Rafa ao lado do texto em desktop;
+- texto primeiro e foto depois no mobile;
 - bastante respiro;
-- sem parecer pagina de curriculo.
+- composicao editorial;
+- sem cara de pagina de curriculo;
+- CTA discreto para curriculo;
+- acentos bordo apenas como detalhe.
 
 ## Layout
 
-Direcao inicial:
+Estrutura recomendada:
 
 - titulo curto;
-- texto principal em 1 ou 2 paragrafos;
-- pontos de confianca em linha ou grid discreto;
-- foto do Rafa ao lado;
-- CTA para curriculo.
+- 3 ou 4 paragrafos curtos;
+- pequenos sinais de confianca;
+- foto ao lado;
+- CTA de curriculo.
 
-Titulo sugerido:
+Titulo final:
 
 ```txt
 Sobre mim
-```
-
-Alternativas:
-
-```txt
-Por tras do codigo
-```
-
-```txt
-Quem constroi
-```
-
-CTA opcional:
-
-```txt
-Baixar curriculo
 ```
 
 ## Comportamento
 
 ### Desktop
 
-- Layout pode ser em duas colunas: texto principal e pontos de confianca.
-- Foto do Rafa deve ficar ao lado do texto, com tratamento visual alinhado ao dark premium.
-- A foto deve ser discreta e nao competir com a ilustracao do hero.
-- Texto deve ter largura confortavel para leitura.
+- Layout em duas colunas.
+- Texto com largura confortavel para leitura.
+- Foto com presenca visual, mas sem competir com o Hero.
+- CTA abaixo do bloco de texto.
 
 ### Mobile
 
-- Conteudo deve empilhar.
-- Texto precisa continuar curto.
-- Foto pode aparecer acima ou abaixo do texto, mantendo boa proporcao.
-- Pontos de confianca devem virar lista ou cards compactos.
+- Conteudo empilhado.
+- Texto vem antes da foto.
+- Paragrafos continuam curtos.
+- Destaques ficam compactos.
 
 ## Acessibilidade
 
 - Texto com contraste AA.
-- Se houver imagem, usar alt adequado ou marcar como decorativa.
-- CTA deve ter foco visivel.
-- Evitar paragrafos longos demais.
+- Paragrafos curtos e escaneaveis.
+- Imagem com alt apropriado se for informativa.
+- CTA com foco visivel.
 
 ## Criterios de Aceite
 
 - A secao apresenta Rafa de forma humana e profissional.
-- A copy nao repete o curriculo inteiro.
-- A experiencia como programador desde 2021 e a UnB aparecem com naturalidade.
-- O texto reforca produto, engenharia, qualidade e IA estruturada.
-- A secao tem foto do Rafa ao lado em desktop.
-- A secao tem CTA para curriculo.
-- A secao segue visual dark premium guiado por `site-inspiration.jpg`.
-- A secao funciona como apoio aos cases, nao como protagonista maior que eles.
-- A secao e curta, legivel e responsiva.
+- A copy e curta e legivel em poucos segundos.
+- O texto comunica quem ele e, como trabalha e o que valoriza.
+- A secao nao soa como curriculo resumido.
+- A secao nao repete Hero, Stack ou Contato.
+- Soft skills aparecem pelo comportamento descrito, e nao por adjetivos soltos.
+- A experiencia desde 2021 aparece de forma natural.
+- A foto aparece ao lado no desktop e abaixo do texto no mobile.
+- O CTA de curriculo existe, mas nao domina a secao.
 
 ## Dependencias
 
@@ -168,6 +192,5 @@ Baixar curriculo
 
 ## Questoes em Aberto
 
-- O titulo final sera `Sobre mim` ou algo mais autoral?
-- Qual arquivo sera usado como foto do Rafa?
-- O CTA sera `Baixar curriculo` ou `Ver curriculo`?
+- Qual arquivo final sera usado para a foto definitiva do Rafa?
+- Qual arquivo final sera usado para o curriculo?

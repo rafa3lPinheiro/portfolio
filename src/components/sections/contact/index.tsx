@@ -42,12 +42,6 @@ export function ContactSection() {
         >
           <Linkedin size={18} /> LinkedIn
         </Link>
-        <Link
-          href={`mailto:${socialLinks.email}`}
-          className="inline-flex items-center gap-2 text-[0.9rem] text-[var(--muted)] transition-colors duration-300 hover:text-[var(--text)]"
-        >
-          <Mail size={18} /> {socialLinks.email}
-        </Link>
       </div>
     </section>
   );
