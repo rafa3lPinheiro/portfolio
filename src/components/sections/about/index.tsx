@@ -53,9 +53,10 @@ export function AboutSection() {
           <span className="text-[0.88rem] text-[var(--muted)]">Full-stack</span>
         </div>
         <ButtonLink
-          href="#"
+          href="/Currículo-Rafael-Pinheiro.pdf"
           variant="secondary"
-          aria-disabled="true"
+          target="_blank"
+          rel="noreferrer"
           className="border-[var(--line-strong)] bg-[var(--surface-2)] text-[var(--text)] hover:border-[var(--accent)] hover:bg-[var(--surface-3)]"
         >
           Ver currículo <Download size={16} />
