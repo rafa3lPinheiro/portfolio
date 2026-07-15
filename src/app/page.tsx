@@ -1,6 +1,6 @@
 import {
   AboutSection,
-  CasesSection,
+  // CasesSection,
   ContactSection,
   Hero,
   ProcessSection,
@@ -12,7 +12,7 @@ export default function Home() {
     <main>
       <Hero />
       <ProcessSection />
-      <CasesSection />
+      {/* <CasesSection /> */}
       <StackSection />
       <AboutSection />
       <ContactSection />
