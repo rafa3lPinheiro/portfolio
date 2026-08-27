@@ -30,7 +30,7 @@ export function ContactSection() {
           href={socialLinks.github}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 text-[0.9rem] text-[var(--muted)] transition-colors duration-300 hover:text-[var(--text)]"
+          className="inline-flex items-center gap-2 text-[0.9rem] text-[var(--muted)] transition-colors duration-300 hover:text-[var(--text)] active:scale-[0.98]"
         >
           <Github size={18} /> GitHub
         </Link>
@@ -38,7 +38,7 @@ export function ContactSection() {
           href={socialLinks.linkedin}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 text-[0.9rem] text-[var(--muted)] transition-colors duration-300 hover:text-[var(--text)]"
+          className="inline-flex items-center gap-2 text-[0.9rem] text-[var(--muted)] transition-colors duration-300 hover:text-[var(--text)] active:scale-[0.98]"
         >
           <Linkedin size={18} /> LinkedIn
         </Link>

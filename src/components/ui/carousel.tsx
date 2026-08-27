@@ -148,7 +148,7 @@ function CarouselPrevious({
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       className={cn(
-        "inline-flex h-11 w-11 items-center justify-center rounded-[16px] border border-[var(--line-strong)] text-[var(--text)] transition-colors duration-300 hover:border-[var(--accent)] hover:text-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-35",
+        "inline-flex h-11 w-11 items-center justify-center rounded-[16px] border border-[var(--line-strong)] text-[var(--text)] transition-colors duration-300 hover:border-[var(--accent)] hover:text-[var(--accent)] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-35",
         className,
       )}
       {...props}
@@ -171,7 +171,7 @@ function CarouselNext({
       disabled={!canScrollNext}
       onClick={scrollNext}
       className={cn(
-        "inline-flex h-11 w-11 items-center justify-center rounded-[16px] border border-[var(--line-strong)] text-[var(--text)] transition-colors duration-300 hover:border-[var(--accent)] hover:text-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-35",
+        "inline-flex h-11 w-11 items-center justify-center rounded-[16px] border border-[var(--line-strong)] text-[var(--text)] transition-colors duration-300 hover:border-[var(--accent)] hover:text-[var(--accent)] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-35",
         className,
       )}
       {...props}

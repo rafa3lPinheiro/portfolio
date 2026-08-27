@@ -47,7 +47,7 @@ export function CaseCard({ study, onOpen, variant }: CaseCardProps) {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={`Ver ${study.title} no GitHub`}
-                className="relative z-20 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-[16px] border border-[var(--line-strong)] text-[var(--text)] transition-colors duration-300 hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                className="relative z-20 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-[16px] border border-[var(--line-strong)] text-[var(--text)] transition-colors duration-300 hover:border-[var(--accent)] hover:text-[var(--accent)] active:scale-[0.98]"
               >
                 <Github aria-hidden="true" size={19} />
               </Link>
@@ -111,7 +111,7 @@ export function CaseCard({ study, onOpen, variant }: CaseCardProps) {
             target="_blank"
             rel="noreferrer"
             aria-label={`Ver ${study.title} no GitHub`}
-            className="absolute top-5 right-5 z-30 inline-flex h-10 items-center gap-2 rounded-[16px] border border-[var(--line-strong)] bg-[rgba(12,11,12,0.72)] px-3 text-xs font-semibold text-[var(--text)] opacity-0 transition-[color,border-color,opacity] duration-300 hover:border-[var(--accent)] hover:text-[var(--accent)] group-hover:opacity-100 group-focus-within:opacity-100"
+          className="absolute top-5 right-5 z-30 inline-flex h-10 items-center gap-2 rounded-[16px] border border-[var(--line-strong)] bg-[rgba(12,11,12,0.72)] px-3 text-xs font-semibold text-[var(--text)] opacity-0 transition-[color,border-color,opacity,transform] duration-300 hover:border-[var(--accent)] hover:text-[var(--accent)] active:scale-[0.98] group-hover:opacity-100 group-focus-within:opacity-100"
           >
             <Github aria-hidden="true" size={16} />
             GitHub

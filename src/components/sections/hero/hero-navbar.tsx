@@ -19,7 +19,7 @@ export function HeroNavbar() {
           {navigationLinks.map((link) => (
             <Link
               key={link.href}
-              className="py-2 text-[0.95rem] leading-none font-medium text-[rgba(255,241,236,0.94)] transition-colors duration-300 hover:text-[#140f17]"
+              className="py-2 text-[0.95rem] leading-none font-medium text-[rgba(255,241,236,0.94)] transition-colors duration-300 hover:text-[#140f17] active:scale-[0.98]"
               href={link.href}
             >
               {link.label}
@@ -32,7 +32,7 @@ export function HeroNavbar() {
           aria-label={open ? "Fechar navegação" : "Abrir navegação"}
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
-          className="inline-flex h-11 w-11 items-center justify-center text-[rgba(255,241,236,0.94)] transition-colors duration-300 hover:text-[#140f17] xl:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center text-[rgba(255,241,236,0.94)] transition-colors duration-300 hover:text-[#140f17] active:scale-[0.98] xl:hidden"
         >
           {open ? <X size={24} strokeWidth={2.2} /> : <Menu size={24} strokeWidth={2.2} />}
         </button>
@@ -52,7 +52,7 @@ export function HeroNavbar() {
                 type="button"
                 aria-label="Fechar navegação"
                 onClick={() => setOpen(false)}
-                className="inline-flex h-11 w-11 items-center justify-center text-[rgba(255,241,236,0.94)] transition-colors duration-300 hover:text-[#140f17]"
+                className="inline-flex h-11 w-11 items-center justify-center text-[rgba(255,241,236,0.94)] transition-colors duration-300 hover:text-[#140f17] active:scale-[0.98]"
               >
                 <X size={24} strokeWidth={2.2} />
               </button>
@@ -62,7 +62,7 @@ export function HeroNavbar() {
               {navigationLinks.map((link) => (
                 <Link
                   key={link.href}
-                  className="text-[1.1rem] font-semibold text-[rgba(255,241,236,0.94)] transition-colors duration-300 hover:text-[#140f17]"
+                  className="text-[1.1rem] font-semibold text-[rgba(255,241,236,0.94)] transition-colors duration-300 hover:text-[#140f17] active:scale-[0.98]"
                   href={link.href}
                   onClick={() => setOpen(false)}
                 >
