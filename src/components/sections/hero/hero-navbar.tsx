@@ -12,6 +12,7 @@ export function HeroNavbar() {
     <>
       <nav
         aria-label="Navegação principal"
+        data-hero-nav
         className="relative z-30 mx-auto flex max-w-[1240px] items-center justify-end"
       >
         <div className="hidden flex-wrap items-center justify-end gap-[clamp(18px,2.6vw,34px)] xl:flex">

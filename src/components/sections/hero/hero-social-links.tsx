@@ -16,7 +16,7 @@ export function HeroSocialLinks({ variant }: HeroSocialLinksProps) {
       : "mx-auto mt-5 flex w-full max-w-[220px] items-center justify-center gap-6 xl:hidden";
 
   return (
-    <div aria-label="Links rápidos" className={containerClassName}>
+    <div data-hero-social aria-label="Links rápidos" className={containerClassName}>
         <Link
           href={socialLinks.github}
           target="_blank"

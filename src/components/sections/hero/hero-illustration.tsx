@@ -4,6 +4,7 @@ import heroRafael from "../../../public/hero-rafael.png";
 export function HeroIllustration() {
   return (
     <div
+      data-hero-illustration
       aria-hidden="true"
       className="pointer-events-none absolute right-[clamp(16px,4vw,44px)] bottom-0 left-[clamp(16px,4vw,44px)] z-10 flex justify-center opacity-90 xl:right-0 xl:left-0 xl:mx-auto xl:w-full xl:max-w-[1380px] xl:justify-end xl:opacity-100"
     >
