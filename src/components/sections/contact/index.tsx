@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { socialLinks } from "../../../content/navigation";
 import { ButtonLink } from "../../ui/button";
+import { ContactMotion } from "./contact-motion";
 
 export function ContactSection() {
   return (
@@ -9,6 +10,7 @@ export function ContactSection() {
       id="contato"
       className="mx-auto max-w-[1120px] border-t border-[var(--line)] px-[clamp(18px,4vw,40px)] pt-[72px] pb-[84px] text-center md:pt-[104px]"
     >
+      <ContactMotion>
       <h2 className="text-5xl leading-[1.05] font-bold text-[var(--text)]">
         Vamos conversar
       </h2>
@@ -25,6 +27,7 @@ export function ContactSection() {
           Entrar em contato <Mail size={18} />
         </ButtonLink>
       </div>
+      </ContactMotion>
       <div className="mt-[26px] flex flex-wrap items-center justify-center gap-5">
         <Link
           href={socialLinks.github}

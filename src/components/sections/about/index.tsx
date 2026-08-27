@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Download } from "lucide-react";
 import aboutMe from "../../../public/about-me.png";
 import { ButtonLink } from "../../ui/button";
+import { AboutMotion } from "./about-motion";
 
 export function AboutSection() {
   return (
@@ -9,7 +10,9 @@ export function AboutSection() {
       id="sobre"
       className="mx-auto grid max-w-[1120px] grid-cols-1 items-center gap-14 px-[clamp(18px,4vw,40px)] py-[72px] md:grid-cols-[0.78fr_1fr] md:py-[104px]"
     >
+      <AboutMotion>
       <div
+        data-about-image
         className="order-2 relative mx-auto flex aspect-[0.82] w-full max-w-[420px] items-end justify-center overflow-hidden rounded-[16px] border border-[var(--line)] bg-[linear-gradient(145deg,rgba(72,4,21,0.5),rgba(20,15,23,0.85)),var(--surface-2)] md:order-1"
         aria-label="Foto de Rafael Pinheiro"
       >
@@ -23,7 +26,7 @@ export function AboutSection() {
         />
         <span className="absolute right-5 bottom-5 z-30 h-px w-20 bg-[rgba(255,237,230,0.28)]" />
       </div>
-      <div className="order-1 md:order-2">
+      <div data-about-content className="order-1 md:order-2">
         <h2 className="text-5xl leading-[1.05] font-bold text-[var(--text)]">
           Sobre mim
         </h2>
@@ -62,6 +65,7 @@ export function AboutSection() {
           Ver currículo <Download size={16} />
         </ButtonLink>
       </div>
+      </AboutMotion>
     </section>
   );
 }
