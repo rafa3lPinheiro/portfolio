@@ -181,8 +181,9 @@ A criacao da imagem fica especificada em `specs/002-asset-hero-illustration.md`.
 
 ### Movimento
 
-- A entrada acontece uma vez por carregamento, em timeline curta de 500–800ms.
+- A entrada acontece uma vez por carregamento; textos usam duracoes curtas e a ilustracao usa o token `slow`.
 - Navbar, tipografia, links sociais, highlights e ilustracao entram em ordem de leitura.
+- A ilustracao usa o token `slow` (1.1s) para uma entrada mais suave sem alterar sua posicao final.
 - O movimento usa `transform` e `opacity`, sem alterar o layout final.
 - `prefers-reduced-motion` apresenta o hero imediatamente, sem entrada animada.
 

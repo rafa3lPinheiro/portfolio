@@ -32,7 +32,7 @@ Tokens de referencia:
 ```txt
 fast: 0.3s   # feedback de controle
 base: 0.6s   # entrada ou revelacao de conteudo
-slow: 0.8s   # ilustracao e transicoes de maior peso
+slow: 1.1s   # ilustracao e transicoes de maior peso
 ```
 
 Regras:

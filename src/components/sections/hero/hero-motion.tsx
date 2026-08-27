@@ -50,7 +50,7 @@ export function HeroMotion({ children }: HeroMotionProps) {
           )
           .from(
             "[data-hero-illustration]",
-            { opacity: 0, y: 28, duration: 0.8 },
+            { opacity: 0, y: 28, duration: 1.1 },
             "-=0.4",
           );
       });
