@@ -21,6 +21,31 @@ O site deve ser bem componentizado, com responsabilidades pequenas e explicitas.
 - Acessibilidade como requisito, nao acabamento.
 - Estilos consistentes com a direcao visual documentada.
 
+## Sistema de movimento
+
+GSAP e usado apenas quando o movimento comunica hierarquia, continuidade ou
+feedback. Transicoes simples de hover, focus e active permanecem em
+Tailwind/CSS.
+
+Tokens de referencia:
+
+```txt
+fast: 0.3s   # feedback de controle
+base: 0.6s   # entrada ou revelacao de conteudo
+slow: 0.8s   # ilustracao e transicoes de maior peso
+```
+
+Regras:
+
+- Em Next.js/React, animacoes rodam somente no client e usam `useGSAP()` com
+  `scope` e cleanup automatico.
+- `gsap.matchMedia()` deve cobrir breakpoints e `prefers-reduced-motion`.
+- Priorizar `transform`/aliases (`x`, `y`, `scale`, `rotation`) e `opacity`.
+- Usar `ScrollTrigger` somente para revelacoes ligadas ao scroll; nao usar
+  scroll hijacking, loops infinitos ou pinning sem justificativa de produto.
+- Toda animacao deve preservar a leitura e ter fallback estatico quando o
+  movimento estiver reduzido ou indisponivel.
+
 ## Uso de shadcn
 
 Usar shadcn sempre que fizer sentido, especialmente para:

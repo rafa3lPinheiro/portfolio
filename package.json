@@ -10,11 +10,13 @@
     "test": "tsc --noEmit --pretty false"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-separator": "^1.1.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
+    "gsap": "^3.15.0",
     "lucide-react": "^0.468.0",
     "next": "^16.2.10",
     "react": "^19.0.0",
