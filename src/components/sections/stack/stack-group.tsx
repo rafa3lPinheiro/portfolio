@@ -7,7 +7,7 @@ type StackGroupProps = {
 
 export function StackGroup({ title, items }: StackGroupProps) {
   return (
-    <article className="min-h-64 overflow-hidden rounded-[16px] border border-[var(--line)] bg-[var(--surface-2)] p-6 transition-colors duration-300 hover:border-[var(--line-strong)]">
+    <article data-stack-group className="min-h-64 overflow-hidden rounded-[16px] border border-[var(--line)] bg-[var(--surface-2)] p-6 transition-colors duration-300 hover:border-[var(--line-strong)] focus-within:border-[var(--line-strong)]">
       <h3 className="mb-6 text-xl leading-tight font-semibold text-[var(--text)]">
         {title}
       </h3>

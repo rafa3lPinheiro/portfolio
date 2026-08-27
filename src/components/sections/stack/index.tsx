@@ -1,6 +1,7 @@
 import { stackGroups } from "../../../content/stack";
 import { SectionShell } from "../../layout/section-shell";
 import { StackGroup } from "./stack-group";
+import { StackMotion } from "./stack-motion";
 
 export function StackSection() {
   return (
@@ -9,11 +10,13 @@ export function StackSection() {
       title="Stack"
       description="Escolho ferramentas que reduzem ambiguidade e tornam o desenvolvimento mais claro, testável e preparado para evoluir."
     >
-      <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-        {stackGroups.map((group) => (
-          <StackGroup key={group.title} title={group.title} items={group.items} />
-        ))}
-      </div>
+      <StackMotion>
+        <div data-stack-groups className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {stackGroups.map((group) => (
+            <StackGroup key={group.title} title={group.title} items={group.items} />
+          ))}
+        </div>
+      </StackMotion>
     </SectionShell>
   );
 }
