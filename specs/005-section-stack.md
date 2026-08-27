@@ -140,6 +140,13 @@ Eu gosto de ferramentas que reduzem ambiguidade: tipos fortes, validacao clara, 
 
 ## Comportamento
 
+### Movimento
+
+- Os quatro grupos entram em stagger uma vez ao alcançarem o viewport.
+- Hover e focus alteram superficie e borda com duracao de 300ms.
+- Nenhuma tecnologia depende de movimento ou hover para ser compreendida.
+- `prefers-reduced-motion` remove a entrada escalonada.
+
 ### Desktop
 
 - Grupos podem aparecer em grid de 4 colunas ou 2x2.

@@ -296,6 +296,14 @@ Performance boa nao nasce so de otimizar codigo; nasce de entender o fluxo.
 
 ## Comportamento
 
+### Movimento
+
+- A grade pode entrar uma vez com stagger discreto ao alcançar o viewport.
+- Hover e focus usam imagem escurecida, blur e revelacao de metadados com duracao de 300ms.
+- O carrossel mobile nao usa autoplay nem scroll hijacking.
+- A abertura de Dialog/Drawer usa fade e escala minima, preservando foco e fechamento natural.
+- `prefers-reduced-motion` remove entradas e transicoes decorativas, mantendo cards e detalhes funcionais.
+
 ### Desktop
 
 - Grid com 3 cards.

@@ -148,6 +148,13 @@ Sobre mim
 
 ## Comportamento
 
+### Movimento
+
+- A foto entra suavemente pelo eixo horizontal e o conteúdo textual aparece em sequência curta.
+- A entrada acontece uma vez ao alcançar o viewport.
+- O tratamento grayscale, escuro e a ordem responsiva não mudam durante a animação.
+- `prefers-reduced-motion` mantém foto e texto imediatamente visíveis.
+
 ### Desktop
 
 - Layout em duas colunas.

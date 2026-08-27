@@ -127,6 +127,12 @@ O fechamento pode ter um pouco mais de respiro vertical para dar sensacao de con
 
 ## Comportamento
 
+### Movimento
+
+- Titulo, copy, CTA e links entram em sequência curta quando a seção se aproxima do viewport.
+- O CTA mantém prioridade visual durante e após a animação.
+- `prefers-reduced-motion` remove a entrada sem alterar o conteúdo.
+
 ### Desktop
 
 - Conteudo centralizado ou levemente alinhado ao grid principal do site.

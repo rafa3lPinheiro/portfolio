@@ -29,7 +29,7 @@ Inclui:
 ## Fora de Escopo
 
 - Implementacao tecnica.
-- Animacoes finais.
+- Animacoes continuas, parallax ou scroll hijacking.
 - Conteudo completo dos cases.
 - Criacao final da ilustracao do Rafa.
 - Secao de processo.
@@ -178,6 +178,13 @@ A ilustracao deve:
 A criacao da imagem fica especificada em `specs/002-asset-hero-illustration.md`.
 
 ## Comportamento
+
+### Movimento
+
+- A entrada acontece uma vez por carregamento, em timeline curta de 500–800ms.
+- Navbar, tipografia, links sociais, highlights e ilustracao entram em ordem de leitura.
+- O movimento usa `transform` e `opacity`, sem alterar o layout final.
+- `prefers-reduced-motion` apresenta o hero imediatamente, sem entrada animada.
 
 ### Desktop
 

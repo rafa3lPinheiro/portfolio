@@ -35,6 +35,10 @@ As specs principais da landing page estao criadas e consistentes com a decisao d
 - Implementacao deve ser bem componentizada, sem mega componentes.
 - About deve dizer que Rafa programa desde 2021, nao destacar empresa desde 2021.
 - About tera foto do Rafa ao lado e CTA para curriculo.
+- O sistema de movimento usa GSAP apenas para entradas orquestradas e revelacoes ligadas ao viewport.
+- Transicoes simples de controles permanecem em Tailwind/CSS com duracao de 300ms.
+- Todas as animacoes possuem fallback estatico para `prefers-reduced-motion`.
+- A milestone M12 consolidou ritmo visual e movimento na Home; a secao de Projetos permanece comentada ate existirem dados reais.
 
 ## Diretriz Tecnica
 
@@ -76,3 +80,8 @@ Pontos principais:
 - Confirmar email final.
 - Definir se o curriculo sera PDF local no projeto ou link externo.
 - Confirmar links finais de GitHub e LinkedIn.
+
+### Movimento
+
+- Registrar evidencias visuais de desktop e mobile apos a reativacao de Projetos.
+- Revisar CLS/INP e reduced motion durante a validacao final da Home.

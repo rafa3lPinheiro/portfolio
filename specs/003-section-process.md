@@ -25,7 +25,7 @@ Inclui:
 - Criar uma secao longa de metodologia.
 - Criar documentacao tecnica completa do processo.
 - Mostrar ferramentas internas ou detalhes sensiveis.
-- Implementar animacoes complexas.
+- Implementar movimento continuo, pinning ou scroll hijacking.
 - Criar cases completos.
 
 ## Mensagem Central
@@ -127,6 +127,13 @@ IA acelera meu processo, mas o criterio vem antes: contexto claro, spec pequena,
 ```
 
 ## Comportamento
+
+### Movimento
+
+- A timeline entra uma vez quando fica proxima do viewport.
+- No desktop, a linha horizontal cresce com `scaleX` e as etapas aparecem em stagger.
+- No mobile, a ordem vertical e a leitura permanecem estaticas ou recebem apenas entrada discreta.
+- `prefers-reduced-motion` remove a revelacao e preserva todas as etapas visiveis.
 
 ### Desktop
 
