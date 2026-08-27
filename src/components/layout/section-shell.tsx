@@ -32,7 +32,12 @@ export function SectionShell({
             {eyebrow}
           </span>
         ) : null}
-        <h2 className="mt-3 text-5xl leading-[1.05] font-bold tracking-[0] text-[var(--text)]">
+        <h2
+          className={cn(
+            "text-5xl leading-[1.05] font-bold tracking-[0] text-[var(--text)]",
+            eyebrow ? "mt-3" : "mt-0",
+          )}
+        >
           {title}
         </h2>
         {description ? (

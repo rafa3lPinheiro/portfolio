@@ -27,7 +27,7 @@ export function AboutSection() {
         <span className="absolute right-5 bottom-5 z-30 h-px w-20 bg-[rgba(255,237,230,0.28)]" />
       </div>
       <div data-about-content className="order-1 md:order-2">
-        <h2 className="text-5xl leading-[1.05] font-bold text-[var(--text)]">
+        <h2 className="text-5xl leading-[1.05] font-bold tracking-[0] text-[var(--text)]">
           Sobre mim
         </h2>
         <p className="mt-[18px] text-base leading-[1.8] text-[var(--muted)]">

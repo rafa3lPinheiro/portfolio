@@ -11,7 +11,7 @@ export function ContactSection() {
       className="mx-auto max-w-[1120px] border-t border-[var(--line)] px-[clamp(18px,4vw,40px)] pt-[72px] pb-[84px] text-center md:pt-[104px]"
     >
       <ContactMotion>
-      <h2 className="text-5xl leading-[1.05] font-bold text-[var(--text)]">
+      <h2 className="text-5xl leading-[1.05] font-bold tracking-[0] text-[var(--text)]">
         Vamos conversar
       </h2>
       <p className="mx-auto mt-[18px] max-w-[620px] text-base leading-[1.8] text-[var(--muted)]">
