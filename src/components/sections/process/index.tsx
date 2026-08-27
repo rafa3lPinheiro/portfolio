@@ -1,4 +1,5 @@
 import { ProcessTimeline } from "./process-timeline";
+import { ProcessMotion } from "./process-motion";
 
 export function ProcessSection() {
   return (
@@ -13,7 +14,9 @@ export function ProcessSection() {
           </p>
         </header>
 
-        <ProcessTimeline />
+        <ProcessMotion>
+          <ProcessTimeline />
+        </ProcessMotion>
       </div>
     </section>
   );

@@ -29,9 +29,10 @@ const steps = [
 
 export function ProcessTimeline() {
   return (
-    <ol className="relative mx-auto mt-16 max-w-[720px] list-none p-0 md:mt-20 min-[1040px]:grid min-[1040px]:max-w-none min-[1040px]:grid-cols-4">
+    <ol data-process-timeline className="relative mx-auto mt-16 max-w-[720px] list-none p-0 md:mt-20 min-[1040px]:grid min-[1040px]:max-w-none min-[1040px]:grid-cols-4">
       <span
         aria-hidden="true"
+        data-process-line
         className="absolute top-[59px] right-[12.5%] left-[12.5%] hidden h-px bg-[#480415] min-[1040px]:block"
       />
       {steps.map((step, index) => (

@@ -14,7 +14,7 @@ export function ProcessStep({
   isLast,
 }: ProcessStepProps) {
   return (
-    <li className="group relative grid grid-cols-[48px_1fr] gap-4 pb-12 last:pb-0 min-[1040px]:block min-[1040px]:px-4 min-[1040px]:pb-0 min-[1040px]:text-center">
+    <li data-process-step className="group relative grid grid-cols-[48px_1fr] gap-4 pb-12 last:pb-0 min-[1040px]:block min-[1040px]:px-4 min-[1040px]:pb-0 min-[1040px]:text-center">
       <div className="relative flex justify-center min-[1040px]:block">
         <Icon
           aria-hidden="true"
