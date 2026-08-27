@@ -206,6 +206,8 @@ A criacao da imagem fica especificada em `specs/002-asset-hero-illustration.md`.
 
 - Contraste minimo AA para textos essenciais.
 - CTAs com foco visivel.
+- Links sociais usam um `nav` semantico e hitbox minima de 44px.
+- Estados de hover nao dependem de texto preto sobre o fundo bordo.
 - Ordem de leitura coerente no DOM.
 - Texto nao deve depender apenas de imagem ou decoracao.
 - Animacoes, se existirem depois, nao devem bloquear leitura.

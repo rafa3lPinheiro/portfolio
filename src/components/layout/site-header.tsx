@@ -8,7 +8,7 @@ export function SiteHeader() {
         Rafael Pinheiro
       </Link>
       <nav className="nav-links" aria-label="Navegação principal">
-        {navigationLinks.map((link) => (
+        {navigationLinks.filter((link) => link.available).map((link) => (
           <Link key={link.href} href={link.href}>
             {link.label}
           </Link>

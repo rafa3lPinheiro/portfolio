@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import { socialLinks } from "../../../content/navigation";
 
 const socialIconClassName =
-  "inline-flex items-center justify-center text-[rgba(255,233,228,0.92)] transition-[color,transform] duration-300 hover:-translate-y-1 hover:scale-110 hover:text-[#140f17] active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none";
+  "inline-flex min-h-11 min-w-11 items-center justify-center touch-manipulation text-[rgba(255,233,228,0.92)] transition-[color,transform] duration-300 hover:-translate-y-0.5 hover:scale-105 hover:text-[#fff7f1] active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none";
 
 type HeroSocialLinksProps = {
   variant: "inline" | "rail";
@@ -16,7 +16,7 @@ export function HeroSocialLinks({ variant }: HeroSocialLinksProps) {
       : "mx-auto mt-5 flex w-full max-w-[220px] items-center justify-center gap-6 xl:hidden";
 
   return (
-    <div data-hero-social aria-label="Links rápidos" className={containerClassName}>
+    <nav data-hero-social aria-label="Links sociais" className={containerClassName}>
         <Link
           href={socialLinks.github}
           target="_blank"
@@ -24,7 +24,7 @@ export function HeroSocialLinks({ variant }: HeroSocialLinksProps) {
           aria-label="GitHub"
           className={socialIconClassName}
         >
-          <Github size={18} strokeWidth={1.8} />
+          <Github aria-hidden="true" size={18} strokeWidth={1.8} />
         </Link>
         <Link
           href={socialLinks.linkedin}
@@ -33,15 +33,15 @@ export function HeroSocialLinks({ variant }: HeroSocialLinksProps) {
           aria-label="LinkedIn"
           className={socialIconClassName}
         >
-          <Linkedin size={18} strokeWidth={1.8} />
+          <Linkedin aria-hidden="true" size={18} strokeWidth={1.8} />
         </Link>
         <Link
           href={`mailto:${socialLinks.email}`}
           aria-label="Email"
           className={socialIconClassName}
         >
-          <Mail size={18} strokeWidth={1.8} />
+          <Mail aria-hidden="true" size={18} strokeWidth={1.8} />
         </Link>
-    </div>
+    </nav>
   );
 }
