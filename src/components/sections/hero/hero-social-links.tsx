@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import { socialLinks } from "../../../content/navigation";
 
 const socialIconClassName =
-  "inline-flex items-center justify-center text-[rgba(255,233,228,0.92)] transition-colors duration-300 hover:text-[#140f17] active:scale-[0.98]";
+  "inline-flex items-center justify-center text-[rgba(255,233,228,0.92)] transition-[color,transform] duration-300 hover:-translate-y-1 hover:scale-110 hover:text-[#140f17] active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none";
 
 type HeroSocialLinksProps = {
   variant: "inline" | "rail";

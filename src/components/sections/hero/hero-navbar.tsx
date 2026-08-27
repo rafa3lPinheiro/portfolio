@@ -19,7 +19,7 @@ export function HeroNavbar() {
           {navigationLinks.map((link) => (
             <Link
               key={link.href}
-              className="py-2 text-[0.95rem] leading-none font-medium text-[rgba(255,241,236,0.94)] transition-colors duration-300 hover:text-[#140f17] active:scale-[0.98]"
+              className="group relative py-2 text-[0.95rem] leading-none font-medium text-[rgba(255,241,236,0.94)] transition-[color,transform] duration-300 hover:-translate-y-px hover:text-[#140f17] active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none after:absolute after:right-0 after:bottom-0 after:left-0 after:h-px after:origin-left after:scale-x-0 after:bg-[#140f17] after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100 focus-visible:after:scale-x-100 motion-reduce:after:transition-none"
               href={link.href}
             >
               {link.label}
@@ -62,7 +62,7 @@ export function HeroNavbar() {
               {navigationLinks.map((link) => (
                 <Link
                   key={link.href}
-                  className="text-[1.1rem] font-semibold text-[rgba(255,241,236,0.94)] transition-colors duration-300 hover:text-[#140f17] active:scale-[0.98]"
+                  className="group relative text-[1.1rem] font-semibold text-[rgba(255,241,236,0.94)] transition-[color,transform] duration-300 hover:-translate-y-px hover:text-[#140f17] active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none after:absolute after:right-0 after:bottom-[-4px] after:left-0 after:h-px after:origin-left after:scale-x-0 after:bg-[#140f17] after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100 focus-visible:after:scale-x-100 motion-reduce:after:transition-none"
                   href={link.href}
                   onClick={() => setOpen(false)}
                 >
